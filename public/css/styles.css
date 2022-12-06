@@ -1,0 +1,56 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  max-width: 360px;
+  padding: 15px;
+}
+
+.form-floating {
+     margin-bottom: 20px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.top {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.middle {
+     border-radius: 0;
+}
+
+.bottom {
+  margin-top: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-control::placeholder{
+     color:#ced4da!important
+}
+.form-control:focus {
+     position: relative;
+     z-index: 2
+}
+.form-floating > .form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
+     padding-top: 0;
+     padding-bottom: 0;
+}
+
+.bg-light {
+     max-height: 250px;
+}
