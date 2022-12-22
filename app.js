@@ -33,11 +33,11 @@ app.post("/", function(req, res){
      }
 
      const jsonData = JSON.stringify(data);
-
-     const url = "https://us9.api.mailchimp.com/3.0/lists/e1b9bbd604"
+     // First part number (us-xx) is the last part of your API key. The last part after lists/ is your list ID
+     const url = "https://us21.api.mailchimp.com/3.0/lists/fec3e05118"
      const options = {
           method: "POST",
-          auth: "francisco:9d0bcbc7d457c8d11b87c3a3ed0b9c89-us9"
+          auth: "francisco:9de2d1802820abdda1cc0fb12deeea63-us21" //API key
      }
 
      const request = https.request(url, options, function(response){
@@ -69,7 +69,7 @@ app.listen(process.env.PORT || 3000, function(){
 
 
 // mail chimp API key
-// 9d0bcbc7d457c8d11b87c3a3ed0b9c89-us9
+// 9de2d1802820abdda1cc0fb12deeea63-us21
 
-// list ID
-// e1b9bbd604
+// list(Audience) ID
+// fec3e05118
